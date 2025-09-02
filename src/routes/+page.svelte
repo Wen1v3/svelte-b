@@ -117,7 +117,7 @@
           <td>{art.title}</td>
           <td>{art.status}</td>
           <td>{art.author}</td>
-          <td>{new Date(art.createdAt).toLocaleString()}----{formatDate(art.createdAt)}</td>
+          <td>{formatDate(art.createdAt)}</td>
           <td>
             <Button label="Edit" onClick={() => openModal(art)} />
             <Button label="Delete" onClick={() => remove(art.id)} />
